@@ -144,7 +144,7 @@ margin-top:1.2em;
 .small-box{
     background:#000000d0;
     height:130px;
-    width:200px;
+    width:210px;
     border-radius:15px;
     text-align: center;
     /* margin-left:15px;
@@ -154,13 +154,13 @@ margin-top:1.2em;
     /* background-color: brown;*/
 } 
 
-.box5{
+/* .box5{
  width:220px;
 }
 
 .box2{
     width:210px;
- }
+ } */
 
 
 
@@ -319,12 +319,28 @@ button.floating-btn:hover {
    
   } 
 
-  @media only screen and  (max-width:700px) {
+  @media only screen and  (max-width:700px) and (min-width:500px) {
     /* For mobile phones: */
    .container{
-  margin-top:400px;
+  margin-top:200px;
   margin-left:30px;
    }
-  
+   /* .small-box{
+    width:350px;
+   } */
    
   } 
+
+  @media only screen and (max-width:500px){
+    /* For mobile phones: */
+
+   .container{
+  margin-top:700px;
+  margin-left:30px;
+  
+   }
+    
+   
+  }  
+
+  /* */ 
