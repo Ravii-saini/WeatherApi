@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/309d20db01.js" crossorigin="anonymous"></script>
+   
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./public/style.css">
+   
+</head>
+<body>
+   <div class="container">
+    <div class="container1">
+        
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter city name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter city name...'" oninput="this.focus()" class="search-Bar" id="inputCity" >
+                <submit  class="btn"><i class="fas fa-search"></i></submit>
+            </div>
+        
+            <div class="weather">
+               <div class="city">Weather in Dehli,IN</div>
+               <image src="https://openweathermap.org/img/wn/10d@2x.png" class="icon" ></image> 
+                <div class="temp">19.05<span class="degree">°C </span> </div>
+                
+                <div class="Odetails">
+                    <div class="time">9:29:12 AM</div>
+                    <div class="date">Wednesday, 19 february 2023</div>
+                </div>  
+               
+                    
+                  
+            </div>
+       </div>
+       
+      
+    </div>
+
+    <div class="container2 ">
+        <div class="row row1">
+            <div class="small-box box1">
+                <p>Humidity:</p>
+                
+                <h1 class="Bhumidity">45 %</h1>
+              
+
+            </div>
+            <div class="small-box box2">
+                <p>Discription:</p>
+                
+                <h2 class="Bdiscription">Broken cloud</h2>
+            </div>
+            <div class="small-box box3">
+                <p>Wind Speed:</p>
+                
+               <h2 class="Bwind">1.62 km/h</h2>
+            </div>
+        </div>
+
+        <div class="row row2">
+            <div class="small-box box4">
+                <p>Visibility:</p>
+                
+               <h2 class="Bvisibility">10000 </h2>
+            </div>
+            <div class="small-box box5">
+                <h3 class="Bsunrise">Sunrise: 6:12:53 AM</h3>
+                <h3 class="Bsunset">Sunset:  6:37:48 PM</h3>
+            </div>
+            <div class="small-box box6">
+                <h3 class="Bmintemp">Min Temp: 19.05°C</h3>
+                <h3 class="Bmaxtemp">Max Temp: 38.41°C</h3>
+              
+            </div>
+            
+        </div>
+
+    </div>   
+    </div>
+
+
+
+    //////
+
+    
+<!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" href="https://github.com/Ravii-saini">Ravi</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			
+			<li>
+				<a href="https://www.instagram.com/ravii.saini1/" target="_blank">
+	<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/ravisainijnv" target="_blank">
+	<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/ravi-sainii/" target="_blank">
+	<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<button class="floating-btn">
+	Get in Touch
+</button>
+    <script type="text/javascript" src="./public/script.js"></script>
+</body>
+</html>
