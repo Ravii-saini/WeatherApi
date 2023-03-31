@@ -10,7 +10,7 @@ body{
     justify-content: center;
     height:100vh;
     background-color: black;
-    background-image:url("./background.jpg");
+    background-image:url("./images/background.jpg");
     background-size: 100%;
 }
 image{
@@ -43,7 +43,7 @@ h3{
     border-radius: 40px 40px 0 0;
     height:400px;
     background-size:cover;
-  background-image:url("./container1.jpg");
+  background-image:url("./images/container1.jpg");
  
   
   
