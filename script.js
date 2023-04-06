@@ -113,7 +113,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
       document.body.style.backgroundImage = `url(${imageUrl})`;
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundPosition = "center";
-      // document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundSize = "100%";
     })
     .catch(error => console.error(error));
   };
