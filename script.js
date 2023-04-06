@@ -63,7 +63,7 @@ setInterval(updateTime, 1000);
 
 // Fetch weather function
    function fetchWeather(vall){
-    // backgroundImage(vall);
+     backgroundImage(vall);
       fetch('https://api.openweathermap.org/data/2.5/weather?units=metric&q='+vall+'&appid='+apik)
         .then(res => res.json())
          
@@ -102,21 +102,21 @@ navigator.geolocation.getCurrentPosition(function(position) {
 
   ////background-image changing function
   ////
-  // function backgroundImage(city){
-  // const accessKey = "tCiFTWG-M2kDceUQ121QeW53a64rPRAZHE9iaEJ-w5k";
-  // const endpoint = "https://api.unsplash.com/photos/random";
+  function backgroundImage(vall){
+  const accessKey = "tCiFTWG-M2kDceUQ121QeW53a64rPRAZHE9iaEJ-w5k";
+  const endpoint = "https://api.unsplash.com/photos/random";
   
-  // fetch(`${endpoint}?client_id=${accessKey}&query=${city}&query=weather`)
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     const imageUrl = data.urls.full;
-  //     document.body.style.backgroundImage = `url(${imageUrl})`;
-  //     document.body.style.backgroundRepeat = "no-repeat";
-  //     document.body.style.backgroundPosition = "center";
-  //     document.body.style.backgroundSize = "100%";
-  //   })
-  //   .catch(error => console.error(error));
-  // };
+  fetch(`${endpoint}?client_id=${accessKey}&qquery=${vall}&query=weather&query=nature`)
+    .then(response => response.json())
+    .then(data => {
+      const imageUrl = data.urls.full;
+      document.body.style.backgroundImage = `url(${imageUrl})`;
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center";
+      // document.body.style.backgroundSize = "cover";
+    })
+    .catch(error => console.error(error));
+  };
 ///display weather function
 function displayWeather(data){
 
