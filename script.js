@@ -111,7 +111,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
     .then(data => {
       const imageUrl = data.urls.full;
       document.body.style.backgroundImage = `url(${imageUrl})`;
-      document.body.style.backgroundRepeat = "no-repeat";
+      // document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundPosition = "center";
       document.body.style.backgroundSize = "100%";
     })
